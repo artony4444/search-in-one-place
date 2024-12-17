@@ -1,5 +1,5 @@
 # Toggle Search Engine
-Quick Search Across Different Search Engines in one place, Searching Across Multiple Engines made fast and easy.
+Quick Search Between Different Search Engines in one place, Searching Across Multiple Engines made fast and easy.
 
 ## Available Engines
 * Google
