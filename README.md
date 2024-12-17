@@ -1,2 +1,11 @@
-# toggle-search-engine
-Quick switch between search engines, all search engines in one place, (Multi Search Engine) for Searching Across Multiple Engines.
+# Toggle Search Engine
+Quick Search Across Different Search Engines in one place, Searching Across Multiple Engines made fast and easy.
+
+## Available Engines
+* Google
+* Bing
+* Yahoo
+* Duckduckgo <br>
+
+[Request More Engine](https://github.com/artony4444/toggle-search-engine/discussions/1)
+
