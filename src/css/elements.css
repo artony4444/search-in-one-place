@@ -38,7 +38,7 @@ html, body { margin:0; padding: 0; width: 100%; height: 100%; }
 
 .tag:active { filter: brightness(1.2); }
 
-.s-logo { transform: scale(.6); width: calc(var(--blockSize) * .8); pointer-events: none;}
+.s-logo { transform: scale(.6); width: calc(var(--blockSize) * .8); }
 
 .s-name
 {
