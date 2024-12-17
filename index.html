@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <link rel="stylesheet" href="src/css/lib.css">
+    <link rel="stylesheet" href="src/css/root.css">
+    <link color rel="stylesheet" href="src/css/color.css">
+    <link rel="stylesheet" href="src/css/elements.css">
+    
+    <script src="src/js/lib/css/css--var2class.js"></script>
+    
+    
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    
+</head>
+<body>
+    
+    
+    
+    
+    <div class="screen full flex col no-select ofHide b1-c">
+        
+        
+        <!-- Head -->
+        <div class="headBack flex col">
+            
+            
+            <!-- Search -->
+            
+            <div class="searchBar marginBlock round flex jBetween aCenter ofHide b3-c">
+                <!-- Input -->
+                <input id="searchInput" class="searchInput" type="text" placeholder="Search" onchange="[filter.toggleClearSearch(this), filter.search()]">
+                <!-- Close -->
+                <div id="searchClear" class="fh hide" onclick="[filter.clearSearchInput(), filter.search()]">
+                    <div class="cross flex fh center">
+                        <div class="searchButtonBack center round opacity5"><span class="iconEffect material-symbols-outlined">close</span></div>
+                        <div class="w3-c" style="width: 1px; height: 33%; opacity: 50%;"></div>
+                    </div>
+                </div>
+                <!-- Search -->
+                <div class="searchButtonBack center round" onclick="filter.search()"><span class="iconEffect material-symbols-outlined">search</span></div>
+            </div>
+            
+            
+            <!-- Options -->
+            
+            <div class="options flex aCenter paddingAround marginB">
+                
+                <!-- Sites -->
+                <div class="tags fh flex grow ofScroll gap">
+                    
+                    <!-- Google -->
+                    <div class="tag fh round flex aCenter b2-c" onclick="filter.search('google')">
+                        <img class="s-logo fh" src="https://lh3.googleusercontent.com/COxitqgJr1sJnIDe8-jiKhxDx1FrYbtRHKJ9z_hELisAlapwE9LUPh6fcXIfb5vwpbMl4xl9H9TRFPc5NOO8Sb3VSgIBrfRYvW6cUA" alt="Google">
+                        <span class="s-name w3-txt">Google</span>
+                    </div>
+                    
+                    <!-- Bing -->
+                    <div class="tag fh round flex aCenter b2-c" onclick="filter.search('bing')">
+                        <img class="s-logo fh" src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Bing_Fluent_Logo.svg" alt="bing">
+                        <span class="s-name w3-txt">Bing</span>
+                    </div>
+                    
+                    <!-- Yahoo -->
+                    <div class="tag fh round flex aCenter b2-c" onclick="filter.search('yahoo')">
+                        <img class="s-logo fh" src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/yahoo-square-icon.svg" style="transform: scale(.7); border-radius: 100px; opacity: .9;" alt="yahoo!">
+                        <span class="s-name w3-txt">Yahoo</span>
+                    </div>
+                    
+                    <!-- Duck -->
+                    <div class="tag fh round flex aCenter b2-c" onclick="filter.search('duck')">
+                        <img class="s-logo fh" src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/duckduckgo-icon.svg" style="transform: scale(.7); opacity: .9;" alt="yahoo!">
+                        <span class="s-name w3-txt">Duck</span>
+                    </div>
+                    
+                </div>
+                
+                <!-- Filter -->
+                <div class="filterIcon fh round" onclick="filter.toggleFilter()">
+                    <div class="iconScale full center"><span class="w5-txt iconZoom material-symbols-outlined">filter_alt</span></div>
+                </div>
+                
+            </div> <!--/ Options -->
+            
+            
+            <!-- Filters -->
+            
+            <div class="relative">
+                <div id="filters" class="filters hide absolute right marginR marginT curve ofHide b2-c" style="z-index: 2; pointer-events: auto;">
+                    
+                    <!-- Heading -->
+                    <div class="filterHead flex col aCenter">
+                        <div class="filterMargin full flex row jBetween aCenter">
+                            <div class="w4-txt">Filters</div>
+                            <div onclick="filter.toggleFilter()" class="center"><span class="w4-txt crossIcon material-symbols-outlined">close</span></div>
+                        </div>
+                        <!-- 
+                        <div class="filterMargin w4-txt full">Filters</div>
+                         -->
+                        <div class="b4-c" style="height:.5px; width: 90%;"></div>
+                    </div>
+                    
+                    <!-- Body -->
+                    <div class="filterBody ofScroll">
+                        <div id="filtersContainer" class="filterMargin flex filterBoxGap col">
+                            
+                            <!-- FILTERS -->
+                            
+                        </div>
+                    </div>
+                    
+                    <!-- Footer -->
+                    <div class="filterFoot flex col aCenter">
+                        <div class="b4-c" style="height:.5px; width: 90%;"></div>
+                        <div class="marginBlock flex fw rowR jBetween">
+                            <!-- Apply -->
+                            <div onclick="[filter.applyFilters(), filter.toggleFilter(), filter.search()]" class="center buttonFont tag b4-c w1-txt curve padding">Apply</div>
+                            <!-- Reset -->
+                            <div class="flex tag" onclick="filter.clearInputs()">
+                                <div class="center"><span class="w5-txt material-symbols-outlined">restart_alt</span></div>
+                                <div class="flex aCenter buttonFont w5-txt" style="margin-left: calc(var(--space) * .5)">Reset</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div> <!--/ Filters -->
+            
+            
+        </div> <!--/ Head -->
+        
+        
+        <!-- Body -->
+        <div class="body grow flex col ofScroll">
+            
+            <div id="searchEngine" class="grow">
+                
+            </div>
+            
+        </div>
+        
+        
+    </div>
+    
+    
+    
+    <script src="src/js/operators/vars.js"></script>
+    <script src="src/js/operators/filters.js"></script>
+    <script src="src/js/main.js"></script>
+    
+</body>
+</html>

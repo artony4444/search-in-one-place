@@ -1,0 +1,42 @@
+
+.background-color
+{
+    --w0-c: #FFFFFF;
+    --w1-c: #e6e6e6;
+    --w2-c: #bfbfbf;
+    --w3-c: #acabab;
+    --w4-c: #999999;
+    --w5-c: #808080;
+    
+    --b0-c: #000000;
+    --b1-c: #262525;
+    --b2-c: #383636;
+    --b3-c: #4b4b4b;
+    --b4-c: #5c5c5c;
+    --b5-c: #737373;
+    
+    --gr0-c: #68a163;
+    --gr1-c: #4f824c;
+    
+    --blu0-c: #2d7da6;
+}
+
+.color
+{
+    --w1-txt: var(--w1-c);
+    --w2-txt: var(--w2-c);
+    --w3-txt: var(--w3-c);
+    --w4-txt: var(--w4-c);
+    --w5-txt: var(--w5-c);
+    
+    --b1-txt: var(--b1-c);
+    --b2-txt: var(--b2-c);
+    --b3-txt: var(--b3-c);
+    --b4-txt: var(--b4-c);
+    --b5-txt: var(--b5-c);
+    
+    --gr0-txt: var(--gr0-c);
+    --gr1-txt: var(--gr1-c);
+    
+    --blu0-txt: var(--blu0-c);
+}
