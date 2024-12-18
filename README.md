@@ -1,5 +1,5 @@
 # Search In One Place
-> Try now (page) -<br> [artony4444.github.io/toggle-search-engine](https://artony4444.github.io/toggle-search-engine/) <br>
+> Try now (page) -<br> [artony4444.github.io/search-in-one-place](https://artony4444.github.io/search-in-one-place/) <br>
 
 Quick Search Between Different Search Engines in one place, Searching Across Multiple Engines made fast and easy.
 
@@ -9,5 +9,5 @@ Quick Search Between Different Search Engines in one place, Searching Across Mul
 * Yahoo
 * Duckduckgo <br>
 
-[Request More Engine](https://github.com/artony4444/toggle-search-engine/discussions/1)
+[Request More Engine](https://github.com/artony4444/search-in-one-place/discussions/1)
 
