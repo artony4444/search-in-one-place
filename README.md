@@ -1,4 +1,4 @@
-# Toggle Search Engine
+# Search In One Place
 > Try now (page) -<br> [artony4444.github.io/toggle-search-engine](https://artony4444.github.io/toggle-search-engine/) <br>
 
 Quick Search Between Different Search Engines in one place, Searching Across Multiple Engines made fast and easy.
